@@ -1,0 +1,45 @@
+{
+    "network": "matic",
+    "chainId": 137,
+    "defaultPrecision": 2,
+    "rpcUrl": "https://rpc-mainnet.maticvigil.com/v1/c9fa2322d8972ddeee326fcb1007e9c409753ebb",
+    "wsUrl": "wss://rpc-mainnet.maticvigil.com/ws/v1/c9fa2322d8972ddeee326fcb1007e9c409753ebb",
+    "explorer": "https://polygon-explorer-mainnet.chainstacklabs.com/",
+    "exchangeUrl": "https://balancer.exchange",
+    "subgraphUrl": "https://api.thegraph.com/subgraphs/name/sameepsi/wazirx",
+    "addresses": {
+      "bFactory": "0x50BBF261B64Fc7135A1d0C381515c30887986700",
+      "bActions": "0x401419a66c6F7f4fC88E0E4433dB607470a91551",
+      "dsProxyRegistry": "0x3404870942B515AaCc54682878063dA96c6806bE",
+      "proxy": "0x2FCdBF51fB3C5DC7A90EB870b7D78cC130bCC222",
+      "weth": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "multicall": "0xE9eE4948aAD926B298Bb56bf734eD665fAA2eDdB",
+      "vault": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
+      "crpFactory": "0xfBd33F7E203F248ED10BB04fe35e66952532120C"
+    },
+    "connectors": {
+      "injected": {
+        "id": "injected",
+        "name": "MetaMask"
+      },
+      "walletconnect": {
+        "id": "walletconnect",
+        "name": "WalletConnect",
+        "options": {
+            "rpc": "https://rpc-mainnet.matic.network"
+        }
+      },
+      "portis": {
+        "id": "portis",
+        "name": "Portis",
+        "options": {
+          "network": {
+            "nodeUrl": "https://rpc-mainnet.matic.network",
+            "chainId": 137
+          },
+          "dappId": "ffaf56eb-b49e-49d2-86fa-63fcdb5ed7a3"
+        }
+      }
+    }
+  }
+  
