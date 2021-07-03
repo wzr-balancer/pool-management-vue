@@ -106,8 +106,8 @@ export default {
     },
     symbols() {
       return {
-        tokenIn: this.currentSide === 2 ? 'WMATIC' : 'MATIC',
-        tokenOut: this.currentSide === 2 ? 'MATIC' : 'WMATIC'
+        tokenIn: this.currentSide === 2 ? 'WBNB' : 'BNB',
+        tokenOut: this.currentSide === 2 ? 'BNB' : 'WBNB'
       };
     },
     balance() {

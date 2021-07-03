@@ -941,7 +941,7 @@ const actions = {
       ];
       await dispatch('processTransaction', {
         params,
-        title: 'Wrap MATIC to WMATIC'
+        title: 'Wrap BNB to WBNB'
       });
       await dispatch('getBalances');
       setGoal('KFAFBADQ');
