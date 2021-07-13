@@ -32,7 +32,7 @@ export default {
       return `${config.explorer}/${type}/${str}`;
     },
     _ticker(address: string): string {
-      if (address === 'ether') return 'MATIC';
+      if (address === 'ether') return 'ETH';
       const token = config.tokens[address];
       return token ? token.symbol : this._shortenAddress(address);
     },
