@@ -1,0 +1,59 @@
+{
+  "tokens": {
+   "0xae13d989dac2f0debff460ac112a837c89baa7cd":{
+      "address":"0xae13d989dac2f0debff460ac112a837c89baa7cd",
+      "id":"WBNB",
+      "name":"WBNB",
+      "symbol":"WBNB",
+      "decimals":18,
+      "precision":3,
+      "color":"#828384",
+      "hasIcon":false
+   },
+   "0x7ef95a0fee0dd31b22626fa2e10ee6a223f8a684":{
+      "address":"0x7ef95a0fee0dd31b22626fa2e10ee6a223f8a684",
+      "id":"USDT",
+      "name":"USDT",
+      "symbol":"USDT",
+      "decimals":18,
+      "precision":3,
+      "color":"#828384",
+      "hasIcon":false
+   },
+   "0x8babbb98678facc7342735486c851abd7a0d17ca":{
+      "address":"0x8babbb98678facc7342735486c851abd7a0d17ca",
+      "id":"ETH",
+      "name":"ETH",
+      "symbol":"ETH",
+      "decimals":18,
+      "precision":3,
+      "color":"#828384",
+      "hasIcon":true,
+      "logoUrl":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+   },
+   "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7":{
+      "address":"0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7",
+      "id":"BUSD",
+      "name":"BUSD",
+      "symbol":"BUSD",
+      "decimals":18,
+      "precision":3,
+      "color":"#828384",
+      "hasIcon":false
+   },
+   "0x8a9424745056Eb399FD19a0EC26A14316684e274":{
+      "address":"0x8a9424745056Eb399FD19a0EC26A14316684e274",
+      "id":"DAI",
+      "name":"DAI",
+      "symbol":"DAI",
+      "decimals":18,
+      "precision":3,
+      "color":"#828384",
+      "hasIcon":true,
+      "logoUrl":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+   }
+},
+  "untrusted": [
+    
+  ]
+}
