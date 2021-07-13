@@ -4,12 +4,12 @@ export const bsctestnet = {
     "defaultPrecision": 2,
     "rpcUrl": "https://data-seed-prebsc-1-s1.binance.org:8545/",
     //"wsUrl": "",
-    "subgraphUrl": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-beta",
+    "subgraphUrl": "https://api.thegraph.com/subgraphs/name/aaron-foster-wallace/balancer-on-bsc-chapel-a1",
     "explorer": "https://testnet.bscscan.com",
-    "exchangeUrl": "https://pancakeswap.exchange/",// address of the balancer swap on bsc
+    "exchangeUrl": "http://localhost:8081/#/swap",// address of the balancer swap on bsc
     "addresses": {
         //balancer-core\contracts\BFactory.sol	
-        "bFactory": "0x38ed75430bed0d6a22f57a5663102ecabb787a7f ",
+        "bFactory": "0x38ed75430bed0d6a22f57a5663102ecabb787a7f",
         //bactions-proxy\contracts\BActions.sol
         "bActions": "0x6a443d6f9024e949d233fe799dcf2047d274db5b",
         //Maker:dsProxyRegistry
@@ -35,7 +35,7 @@ export const bsctestnet = {
             "id": "injected",
             "name": "MetaMask"
         },
-        "walletconnect": {
+       /* "walletconnect": {
             "id": "walletconnect",
             "name": "WalletConnect",
             "options": {
@@ -68,6 +68,6 @@ export const bsctestnet = {
             "options": {
                 "apiKey": "pk_live_9CE8FD92E54684ED"
             }
-        }
+        }*/
     }
 }
