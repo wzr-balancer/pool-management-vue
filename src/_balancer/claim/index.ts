@@ -24,7 +24,7 @@ export async function ipfsGet(
 const gateway = process.env.VUE_APP_IPFS_NODE || 'cloudflare-ipfs.com';
 
 export const constants = {
-  137: {
+  1: {
     merkleRedeem: '0x6d19b2bF3A36A61530909Ae65445a906D98A2Fa8',
     snapshot:
       'https://storageapi.fleek.co/balancer-team-bucket/balancer-claim/snapshot'

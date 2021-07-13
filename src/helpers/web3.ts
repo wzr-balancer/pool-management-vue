@@ -24,7 +24,6 @@ export async function sendTransaction(
       overrides
     );
     const gasLimit = gasLimitNumber.toNumber();
-    //@ts-ignore
     overrides.gasLimit = Math.floor(gasLimit * (1 + GAS_LIMIT_BUFFER));
     return await contractWithSigner[action](...params, overrides);
   } catch (e) {

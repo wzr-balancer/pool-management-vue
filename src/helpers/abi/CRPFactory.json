@@ -182,7 +182,7 @@
           "id": 4,
           "nodeType": "StructuredDocumentation",
           "src": "213:842:0",
-          "text": " @author Wazirx Labs\n @title Configurable Rights Pool Factory - create parameterized smart pools\n @dev Rights are held in a corresponding struct in ConfigurableRightsPool\n      Index values are as follows:\n      0: canPauseSwapping - can setPublicSwap back to false after turning it on\n                            by default, it is off on initialization and can only be turned on\n      1: canChangeSwapFee - can setSwapFee after initialization (by default, it is fixed at create time)\n      2: canChangeWeights - can bind new token weights (allowed by default in base pool)\n      3: canAddRemoveTokens - can bind/unbind tokens (allowed by default in base pool)\n      4: canWhitelistLPs - if set, only whitelisted addresses can join pools\n                           (enables private pools with more than one LP)"
+          "text": " @author Balancer Labs\n @title Configurable Rights Pool Factory - create parameterized smart pools\n @dev Rights are held in a corresponding struct in ConfigurableRightsPool\n      Index values are as follows:\n      0: canPauseSwapping - can setPublicSwap back to false after turning it on\n                            by default, it is off on initialization and can only be turned on\n      1: canChangeSwapFee - can setSwapFee after initialization (by default, it is fixed at create time)\n      2: canChangeWeights - can bind new token weights (allowed by default in base pool)\n      3: canAddRemoveTokens - can bind/unbind tokens (allowed by default in base pool)\n      4: canWhitelistLPs - if set, only whitelisted addresses can join pools\n                           (enables private pools with more than one LP)"
         },
         "fullyImplemented": true,
         "id": 119,
@@ -1826,7 +1826,7 @@
           "id": 4,
           "nodeType": "StructuredDocumentation",
           "src": "213:842:0",
-          "text": " @author Wazirx Labs\n @title Configurable Rights Pool Factory - create parameterized smart pools\n @dev Rights are held in a corresponding struct in ConfigurableRightsPool\n      Index values are as follows:\n      0: canPauseSwapping - can setPublicSwap back to false after turning it on\n                            by default, it is off on initialization and can only be turned on\n      1: canChangeSwapFee - can setSwapFee after initialization (by default, it is fixed at create time)\n      2: canChangeWeights - can bind new token weights (allowed by default in base pool)\n      3: canAddRemoveTokens - can bind/unbind tokens (allowed by default in base pool)\n      4: canWhitelistLPs - if set, only whitelisted addresses can join pools\n                           (enables private pools with more than one LP)"
+          "text": " @author Balancer Labs\n @title Configurable Rights Pool Factory - create parameterized smart pools\n @dev Rights are held in a corresponding struct in ConfigurableRightsPool\n      Index values are as follows:\n      0: canPauseSwapping - can setPublicSwap back to false after turning it on\n                            by default, it is off on initialization and can only be turned on\n      1: canChangeSwapFee - can setSwapFee after initialization (by default, it is fixed at create time)\n      2: canChangeWeights - can bind new token weights (allowed by default in base pool)\n      3: canAddRemoveTokens - can bind/unbind tokens (allowed by default in base pool)\n      4: canWhitelistLPs - if set, only whitelisted addresses can join pools\n                           (enables private pools with more than one LP)"
         },
         "fullyImplemented": true,
         "id": 119,
@@ -3425,7 +3425,7 @@
   "schemaVersion": "3.1.0",
   "updatedAt": "2020-08-19T03:40:51.426Z",
   "devdoc": {
-    "author": "Wazirx Labs",
+    "author": "Balancer Labs",
     "details": "Rights are held in a corresponding struct in ConfigurableRightsPool      Index values are as follows:      0: canPauseSwapping - can setPublicSwap back to false after turning it on                            by default, it is off on initialization and can only be turned on      1: canChangeSwapFee - can setSwapFee after initialization (by default, it is fixed at create time)      2: canChangeWeights - can bind new token weights (allowed by default in base pool)      3: canAddRemoveTokens - can bind/unbind tokens (allowed by default in base pool)      4: canWhitelistLPs - if set, only whitelisted addresses can join pools                           (enables private pools with more than one LP)",
     "kind": "dev",
     "methods": {

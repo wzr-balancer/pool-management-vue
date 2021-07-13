@@ -6,7 +6,7 @@
     <ListPools
       :key="JSON.stringify(queryMyLiquidity)"
       :query="queryMyLiquidity"
-      :migratable="web3.dsProxyAddress !== ''"
+      :migratable="true"
       class="mb-4"
     />
     <Container class="mb-3">

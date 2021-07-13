@@ -4,6 +4,10 @@ import registryKovan from '@balancer-labs/assets/generated/pm/registry.kovan.jso
 import homestead from '@/config/homestead.json';
 import kovan from '@/config/kovan.json';
 import rinkeby from '@/config/rinkeby.json';
+import registryBSCTestnet  from  '@/config/registry.bsctestnet.json'
+
+import registryBSC  from '@/config/registry.bsc.json'
+
 
 import {bsc} from '@/config/bsc.js';
 import { bsctestnet } from '@/config/bsctestnet.js';
@@ -27,45 +31,12 @@ const registryRinkeby = {
   untrusted: []
 };
 
-const registryBSC = {
-  tokens: {
-    '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c': {
-      address: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
-      id: 'WBNB',
-      name: 'Wrapped BNB',
-      symbol: 'WBNB',
-      decimals: 18,
-      precision: 4,
-      color: '#828384',
-      hasIcon: false,
-      logoUrl:
-        'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/info/logo.png'
-    }
-  },
-  untrusted: []
-};
-const registryBSCTestnet = {
-  tokens: {
-    '0xae13d989dac2f0debff460ac112a837c89baa7cd': {
-      address: '0xae13d989dac2f0debff460ac112a837c89baa7cd',
-      id: 'WBNB',
-      name: 'Wrapped BNB',
-      symbol: 'WBNB',
-      decimals: 18,
-      precision: 4,
-      color: '#828384',
-      hasIcon: false,
-      logoUrl:
-        'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/info/logo.png'
-    }
-  },
-  untrusted: []
-};
 const configs = { homestead, kovan, rinkeby, bsc, bsctestnet };
 configs.homestead = merge(registry, configs.homestead);
 configs.kovan = merge(registryKovan, configs.kovan);
 configs.rinkeby = merge(registryRinkeby, configs.rinkeby);
 configs.bsc = merge(registryBSC, configs.bsc);
+// pancake on testnet https://bsc.kiemtienonline360.com/
 configs.bsctestnet = merge(registryBSCTestnet, configs.bsctestnet);
 
 

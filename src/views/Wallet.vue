@@ -19,7 +19,7 @@
         <div v-text="$t('holdings')" class="column" />
       </UiTableTh>
       <UiTableTr v-for="(balance, i) in balances" :key="i">
-        <Token :address="balance.iconAddress" class="mr-3" size="32" />
+        <Token :address="balance.address" class="mr-3" size="32" />
         <div class="text-left">
           <div v-text="balance.name" />
           <div v-text="balance.symbol" class="text-gray" />
@@ -32,7 +32,7 @@
               type="button"
               class="button-primary button-sm ml-2"
             >
-              Unwrap to MATIC
+              Unwrap to ETH
             </UiButton>
           </div>
           <div v-else class="flex-auto">
@@ -41,7 +41,7 @@
               type="button"
               class="button-primary button-sm ml-2"
             >
-              Wrap to WMATIC
+              Wrap to WETH
             </UiButton>
           </div>
         </div>
@@ -102,23 +102,20 @@ export default {
             symbol: this.web3.tokenMetadata[address].symbol,
             price,
             balance,
-            iconAddress: this.config.tokens[address].iconAddress,
             value: balance * price
           };
         })
         .filter(({ value }) => value > 0.001);
       const ethPrice = this.price.values[this.config.addresses.weth];
-      console.log(ethPrice);
       const ethBalance = formatUnits(this.web3.balances['ether'] || 0, 18);
       return [
         {
           address: 'ether',
-          name: 'MATIC',
-          symbol: 'MATIC',
+          name: 'ETH',
+          symbol: 'ETH',
           price: ethPrice,
           balance: ethBalance,
-          value: ethPrice * ethBalance,
-          iconAddress: '0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0'
+          value: ethPrice * ethBalance
         },
         ...balances
       ];

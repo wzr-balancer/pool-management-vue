@@ -214,7 +214,7 @@ function getAnotherToken(tokens, selectedTokens) {
   const tokenAddresses = Object.keys(tokens);
   for (const tokenAddress of tokenAddresses) {
     const token = tokens[tokenAddress];
-    if (token.symbol === 'MATIC') {
+    if (token.symbol === 'ETH') {
       continue;
     }
     if (!selectedTokens.includes(token.address)) {
@@ -634,11 +634,16 @@ export default {
       ).toFixed(3)}`;
     },
     isDenormValid(token) {
+      //todo: this is a patch because recompute the total weight on change event fails
+      //fixme: handleWeightChange is never called 
+      this.totalWeight = this.tokens.reduce((acc, token) => {
+        const weight = parseFloat(this.weights[token]);
+        return acc + weight;
+      }, 0);
       const denorm = getDenorm(
         this.getPercentage(token),
         this.isSharedOrLocked()
       );
-
       return isValidDenormValue(denorm);
     },
     isPercentValid(token) {

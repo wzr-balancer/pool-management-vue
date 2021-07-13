@@ -244,7 +244,7 @@ const actions = {
       return tx;
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 1");
       commit('CREATE_PROXY_FAILURE', e);
     }
   },
@@ -286,7 +286,9 @@ const actions = {
       commit('CREATE_POOL_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 2");
+      console.log(e.stack);
+
       commit('CREATE_POOL_FAILURE', e);
     }
   },
@@ -365,7 +367,7 @@ const actions = {
       commit('CREATE_SMART_POOL_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return Promise.reject(e);
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 3");
       commit('CREATE_SMART_POOL_FAILURE', e);
     }
   },
@@ -411,7 +413,7 @@ const actions = {
     } catch (e) {
       console.log(e);
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 4");
     }
   },
   migrateAll: async (
@@ -453,7 +455,7 @@ const actions = {
     } catch (e) {
       console.log(e);
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 5");
     }
   },
   joinPool: async (
@@ -484,7 +486,7 @@ const actions = {
       commit('JOIN_POOL_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 6");
       commit('JOIN_POOL_FAILURE', e);
     }
   },
@@ -516,7 +518,7 @@ const actions = {
       commit('JOINSWAP_EXTERN_AMOUNT_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 7");
       commit('JOINSWAP_EXTERN_AMOUNT_FAILURE', e);
     }
   },
@@ -546,7 +548,7 @@ const actions = {
       commit('EXIT_POOL_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 8");
       commit('EXIT_POOL_FAILURE', e);
     }
   },
@@ -576,7 +578,7 @@ const actions = {
       commit('EXITSWAP_POOL_AMOUNT_IN_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 9");
       commit('EXITSWAP_POOL_AMOUNT_IN_FAILURE', e);
     }
   },
@@ -599,7 +601,7 @@ const actions = {
       commit('SET_PUBLIC_SWAP_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 10");
       commit('SET_PUBLIC_SWAP_FAILURE', e);
     }
   },
@@ -626,7 +628,7 @@ const actions = {
       commit('SET_SWAP_FEE_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 11");
       commit('SET_SWAP_FEE_FAILURE', e);
     }
   },
@@ -649,7 +651,7 @@ const actions = {
       commit('POKE_WEIGHTS_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 12");
       commit('POKE_WEIGHTS_FAILURE', e);
     }
   },
@@ -672,7 +674,7 @@ const actions = {
       commit('SET_CONTROLLER_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 13");
       commit('SET_CONTROLLER_FAILURE', e);
     }
   },
@@ -701,7 +703,7 @@ const actions = {
       commit('INCREASE_WEIGHT_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 14");
       commit('INCREASE_WEIGHT_FAILURE', e);
     }
   },
@@ -726,7 +728,7 @@ const actions = {
       commit('DECREASE_WEIGHT_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 15");
       commit('DECREASE_WEIGHT_FAILURE', e);
     }
   },
@@ -752,7 +754,7 @@ const actions = {
       commit('UPDATE_WEIGHTS_GRADUALLY_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 16");
       commit('UPDATE_WEIGHTS_GRADUALLY_FAILURE', e);
     }
   },
@@ -773,7 +775,7 @@ const actions = {
       commit('SET_CAP_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 17");
       commit('SET_CAP_FAILURE', e);
     }
   },
@@ -802,7 +804,7 @@ const actions = {
       commit('COMMIT_ADD_TOKEN_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 18");
       commit('COMMIT_ADD_TOKEN_FAILURE', e);
     }
   },
@@ -825,7 +827,7 @@ const actions = {
       commit('APPLY_ADD_TOKEN_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 19");
       commit('APPLY_ADD_TOKEN_FAILURE', e);
     }
   },
@@ -852,7 +854,7 @@ const actions = {
       commit('REMOVE_TOKEN_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 20");
       commit('REMOVE_TOKEN_FAILURE', e);
     }
   },
@@ -875,7 +877,7 @@ const actions = {
       commit('WHITELIST_LP_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 21");
       commit('WHITELIST_LP_FAILURE', e);
     }
   },
@@ -898,7 +900,7 @@ const actions = {
       commit('REMOVE_WHITELISTED_LP_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 22");
       commit('REMOVE_WHITELISTED_LP_FAILURE', e);
     }
   },
@@ -925,7 +927,7 @@ const actions = {
       commit('APPROVE_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return Promise.reject();
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 23");
       commit('APPROVE_FAILURE', e);
     }
   },
@@ -952,7 +954,7 @@ const actions = {
       commit('WRAP_ETH_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 24");
       commit('WRAP_ETH_FAILURE', e);
     }
   },
@@ -968,7 +970,7 @@ const actions = {
       ];
       await dispatch('processTransaction', {
         params,
-        title: 'Unwrap WMATIC to MATIC'
+        title: 'Unwrap WETH to ETH'
       });
       await dispatch('getBalances');
       setGoal('XSBEFNTT');
@@ -979,7 +981,7 @@ const actions = {
       commit('UNWRAP_ETH_SUCCESS');
     } catch (e) {
       if (!e || isTxReverted(e)) return e;
-      dispatch('notify', ['red', i18n.tc('failureOops')]);
+      dispatch('notify', ['red', i18n.tc('failureOops')]); console.log("Broadcast oops # 25");
       commit('UNWRAP_ETH_FAILURE', e);
     }
   }
