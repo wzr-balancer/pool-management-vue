@@ -9,10 +9,10 @@ export const bsc = {
    * (Shouldn't be use i tho) 
    */
   //"wsUrl": "wss://bsc-ws-node.nariox.org:443",
-  "subgraphUrl": "https://thegraph.com/explorer/subgraph/aaron-foster-wallace/balancer-on-bsc",
+  "subgraphUrl": "https://api.thegraph.com/subgraphs/name/aaron-foster-wallace/balancer-on-bsc",
 
 
-  "explorer": "https://rpc-mainnet.maticvigil.com/",
+  "explorer": "https://bscscan.com/",
   "exchangeUrl": "https://pancakeswap.exchange/",
   "addresses": {
  	  //balancer-core\contracts\BFactory.sol	
