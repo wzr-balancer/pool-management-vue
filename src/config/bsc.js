@@ -48,7 +48,7 @@ export const bsc = {
       "id": "injected",
       "name": "MetaMask"
     },
-    "walletconnect": {
+    /*"walletconnect": {
       "id": "walletconnect",
       "name": "WalletConnect",
       "options": {
@@ -81,7 +81,7 @@ export const bsc = {
       "options": {
         "apiKey": "pk_live_9CE8FD92E54684ED"
       }
-    }
+    }*/
   }
 }
 
